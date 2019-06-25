@@ -74,7 +74,13 @@ Return
 NewStr := StrReplace(Clipboard," x ","XSTR")
 OldStr:=NewStr
 Sleep, 50
+NewStr := StrReplace(OldStr,", ","CSTR")
+OldStr:=NewStr
+Sleep, 50
 NewStr := StrReplace(OldStr, A_Space,"{tab}")
+OldStr:=NewStr
+Sleep, 50
+NewStr := StrReplace(OldStr,"CSTR",", ")
 OldStr:=NewStr
 Sleep, 50
 NewStr := StrReplace(OldStr,"XSTR"," x ")
